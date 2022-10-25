@@ -40,3 +40,15 @@ console.log(cards);
 for(let team of cards){
     console.log(team);
 }
+
+
+for(let team of cards){
+    const teamPrint = `<div class="col-4 mb-5">
+    <div class="card" style="width: 18rem;">
+        <img src="img/${team.immagine}" class="card-img-top" alt="${team.nome}">
+        <div class="card-body">
+          <p class="card-text fw-bold fs-5">${team.nome}</p>
+          <p class="card-text fw-lighter">${team.ruolo}</p>
+        </div>
+    </div>`;
+}
